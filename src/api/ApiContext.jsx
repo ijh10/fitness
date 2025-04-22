@@ -40,7 +40,7 @@ export function ApiProvider({ children }) {
 
   /** Calls all query functions associated with the given tags */
   const invalidateTags = (tagsToInvalidate) => {
-    tagsToInvalidate.forEach((tag) => {
+    tagsToInvalidate?.forEach((tag) => {
       const query = tags[tag];
       if (query) query();
     });

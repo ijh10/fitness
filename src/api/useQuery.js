@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useApi } from "./ApiContext";
 
 /** Queries the API and returns the data, loading status, and error message. */
+// custom hook = code that uses reacts functions to create a new function from it
 export default function useQuery(resource, tag) {
   const { request, provideTag } = useApi();
 

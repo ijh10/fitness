@@ -21,6 +21,7 @@ export default function useMutation(method, resource, tagsToInvalidate) {
         body: JSON.stringify(body),
       });
       setData(result);
+      console.log(tagsToInvalidate);
       invalidateTags(tagsToInvalidate);
     } catch (e) {
       console.error(e);
